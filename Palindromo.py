@@ -64,4 +64,38 @@ class TestPalindrome(unittest.TestCase):
         resultado = is_palindrome('neuqueM')
         self.assertEqual(resultado, False)
 
+# Nuevos tests
+
+    def test_ana(self):
+        resultado = is_palindrome('ana')
+        self.assertEqual(resultado, True)
+
+    def test_reconocer(self):
+        resultado = is_palindrome('reconocer')
+        self.assertEqual(resultado, True)
+
+    def test_oso(self):
+        resultado = is_palindrome('oso')
+        self.assertEqual(resultado, True)
+
+    def test_murcielago(self):
+        resultado = is_palindrome('murcielago')
+        self.assertEqual(resultado, False)
+
+    def test_amor(self):
+        resultado = is_palindrome('amor')
+        self.assertEqual(resultado, False)
+
+    def test_menem(self):
+        resultado = is_palindrome('menem')
+        self.assertEqual(resultado, True)
+
+    def test_oro(self):
+        resultado = is_palindrome('oro')
+        self.assertEqual(resultado, True)
+
+    def test_oracion(self):
+        resultado = is_palindrome('oracion')
+        self.assertEqual(resultado, False)
+
 unittest.main()
